@@ -1,9 +1,9 @@
 package matching
 
 import (
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/frequency"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/adjacency"
+	"github.com/panta/zxcvbn-it/frequency"
+	"github.com/panta/zxcvbn-it/match"
 	"regexp"
 )
 

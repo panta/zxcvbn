@@ -1,7 +1,7 @@
 package matching
 
 import (
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/match"
 )
 
 type reverseDictionnaryMatch struct {

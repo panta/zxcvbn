@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/panta/zxcvbn-it/match"
+	"github.com/panta/zxcvbn-it/scoring"
 
 	"github.com/test-go/testify/assert"
 	"github.com/test-go/testify/require"
@@ -100,5 +100,30 @@ func TestCornerCases(t *testing.T) {
 
 	for _, td := range testdata {
 		_ = PasswordStrength(td, nil)
+	}
+}
+
+func TestItalian(t *testing.T) {
+	testdata := []struct{
+		text string
+		score int
+		guesses float64
+	}{
+		{ "ciao", 0, 135 },
+		{ "pippo", 1, 3795 },
+		{ "talvolta", 1, 7162 },
+		{ "talvolta penso", 3, 1.78455916e+08 },
+		{ "m34pg-9tunib(", 4, 1.0000000000001e+13 },
+	}
+
+	for _, td := range testdata {
+		s := PasswordStrength(td.text, nil)
+		// log.Printf("s:%#v guesses:%v time:%v", s, s.Guesses, s.CalcTime)
+		if !assert.Equal(t, td.score, s.Score, "score") {
+			return
+		}
+		if !assert.Equal(t, td.guesses, s.Guesses, "guesses") {
+			return
+		}
 	}
 }

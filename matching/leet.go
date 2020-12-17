@@ -2,8 +2,8 @@ package matching
 
 import (
 	"bytes"
-	// "github.com/trustelem/zxcvbn/entropy"
-	"github.com/trustelem/zxcvbn/match"
+	// "github.com/panta/zxcvbn-it/entropy"
+	"github.com/panta/zxcvbn-it/match"
 	"sort"
 	"strings"
 )

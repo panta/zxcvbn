@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/test-go/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/match"
 )
 
 // removeRepeatBaseData removes extra data not needed for unit tests

@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/test-go/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/match"
 )
 
 var testl33tTable = map[string][]string{

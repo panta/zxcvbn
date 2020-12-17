@@ -4,9 +4,9 @@ import (
 	"strconv"
 
 	"github.com/dlclark/regexp2"
-	"github.com/trustelem/zxcvbn/internal/mathutils"
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/panta/zxcvbn-it/internal/mathutils"
+	"github.com/panta/zxcvbn-it/match"
+	"github.com/panta/zxcvbn-it/scoring"
 )
 
 const dateMaxYear = 2050

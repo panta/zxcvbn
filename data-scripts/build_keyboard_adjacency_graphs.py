@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import sys
-import simplejson
+import json
 
 def usage():
     return '''
@@ -78,7 +78,7 @@ def build_graph(layout_str, slanted):
             position_table[(x,y)] = token
 
     adjacency_graph = {}
-    for (x,y), chars in position_table.iteritems():
+    for (x,y), chars in position_table.items():
         for char in chars:
             adjacency_graph[char] = []
             for coord in adjacency_func(x, y):
@@ -97,7 +97,7 @@ def goescape(c):
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
-        print usage()
+        print(usage())
         sys.exit(0)
     with open(sys.argv[1], 'w') as f:
         f.write('package adjacency\n\n')

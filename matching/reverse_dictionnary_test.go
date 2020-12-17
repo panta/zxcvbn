@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/test-go/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/match"
 )
 
 func Test_reverseDictionnaryMatch(t *testing.T) {

@@ -2,8 +2,8 @@ package matching
 
 import (
 	"github.com/dlclark/regexp2"
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/panta/zxcvbn-it/match"
+	"github.com/panta/zxcvbn-it/scoring"
 )
 
 type repeatMatch struct{}

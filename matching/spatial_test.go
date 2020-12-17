@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/test-go/testify/assert"
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/adjacency"
+	"github.com/panta/zxcvbn-it/match"
 )
 
 func Test_spatialMatch(t *testing.T) {

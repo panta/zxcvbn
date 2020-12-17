@@ -8,9 +8,9 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/internal/mathutils"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/adjacency"
+	"github.com/panta/zxcvbn-it/internal/mathutils"
+	"github.com/panta/zxcvbn-it/match"
 )
 
 const (

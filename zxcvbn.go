@@ -1,12 +1,12 @@
 package zxcvbn
 
 import (
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/match"
 	"time"
 	"unicode/utf8"
 
-	"github.com/trustelem/zxcvbn/matching"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/panta/zxcvbn-it/matching"
+	"github.com/panta/zxcvbn-it/scoring"
 )
 
 type Result struct {

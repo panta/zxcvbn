@@ -4,7 +4,7 @@ import (
 	"github.com/test-go/testify/assert"
 	"testing"
 
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/match"
 )
 
 func Test_dictionaryMatch(t *testing.T) {

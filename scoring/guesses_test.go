@@ -5,11 +5,11 @@ import (
 	"testing"
 
 	"github.com/test-go/testify/assert"
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/internal/mathutils"
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/matching"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/panta/zxcvbn-it/adjacency"
+	"github.com/panta/zxcvbn-it/internal/mathutils"
+	"github.com/panta/zxcvbn-it/match"
+	"github.com/panta/zxcvbn-it/matching"
+	"github.com/panta/zxcvbn-it/scoring"
 )
 
 func TestRepeatGuesses(t *testing.T) {

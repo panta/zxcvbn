@@ -4,8 +4,8 @@ import (
 	"math"
 	"sort"
 
-	"github.com/trustelem/zxcvbn/internal/mathutils"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/internal/mathutils"
+	"github.com/panta/zxcvbn-it/match"
 )
 
 type Result struct {

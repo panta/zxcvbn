@@ -3,7 +3,7 @@ package matching
 import (
 	"encoding/json"
 	"github.com/test-go/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/panta/zxcvbn-it/match"
 	"os"
 	"testing"
 )
